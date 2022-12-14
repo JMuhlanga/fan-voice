@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Signup.css';
+
 import styled from "styled-components";
 import Error from './Error';
 
