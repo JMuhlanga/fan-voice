@@ -6,7 +6,7 @@ function App() {
 
   useEffect(() => {
     // auto-login
-    fetch("https://paw-finder-production.up.railway.app/me").then((r) => {
+    fetch("http://localhost:3000/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => setUser(user));
       }
