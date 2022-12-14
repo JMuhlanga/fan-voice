@@ -9,8 +9,8 @@ function PopCulture(){
           .then((dataObj) => setArtObj(dataObj))
       },[setArtObj])
 
-    const article = artObj.map((aobj)=>{
-        if(aobj.category_id === 2){
+    const article = artObj.filter((obj)=>(obj.category_id ===2)).map((aobj)=>{
+        
             return(
                 <>
                     <div class="col">
@@ -22,7 +22,7 @@ function PopCulture(){
                             <div className="d-flex justify-content-between align-items-center">
                                 <div className="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>                        
+                                                        
                                 </div>
                                 <small className="text-muted">{aobj.created_at}</small>
                             </div>
@@ -31,7 +31,7 @@ function PopCulture(){
                     </div>
                 </>       
             )
-        }
+        
     }       
     )
     return(

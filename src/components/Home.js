@@ -20,7 +20,7 @@ function Home(){
                     <div className="d-flex justify-content-between align-items-center">
                         <div className="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>                        
+                                               
                         </div>
                         <small className="text-muted">{aobj.created_at}</small>
                     </div>

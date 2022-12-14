@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from './components/Login';
 import Signup from './components/Signup';
 import NavBar from './components/NavBar';
@@ -21,15 +21,13 @@ function App() {
     });
   }, [])
 
-  if (!user) return (
-    <>
-    <Router>
-      <Routes>
-        <Route><Login onLogin={setUser} signup = {<Signup onLogin={setUser}/>} /></Route>
-      </Routes>
-    </Router>
-    </>
-);
+  const Auth = (user) => {
+    if (!user){
+      (<Route><Login onLogin={setUser} signup = {<Signup onLogin={setUser}/>} /></Route>)
+    };
+  }
+  
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -39,6 +37,7 @@ function App() {
           <Route path="/sports" element={<Sports />} />
           <Route path="/popculture" element={<PopCulture />} />
           <Route path="/gaming" element={<Gaming />} />
+          {Auth(user) }
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -4,13 +4,13 @@ function Gaming(){
     const [artObj ,setArtObj] =useState([]);
 
     useEffect(() => {
-        fetch("/articles")
+        fetch("http://localhost:3000/articles")
           .then((r) => r.json())
           .then((dataObj) => setArtObj(dataObj))
       },[setArtObj])
 
-    const article = artObj.map((aobj)=>{
-        if(aobj.category_id === 3){
+    const article = artObj.filter((obj)=>(obj.category_id === 3)).map((aobj)=>{
+        
             return(
                 <>
                     <div class="col">
@@ -22,7 +22,7 @@ function Gaming(){
                             <div className="d-flex justify-content-between align-items-center">
                                 <div className="btn-group">
                                 <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Comment</button>                        
+                                                        
                                 </div>
                                 <small className="text-muted">{aobj.created_at}</small>
                             </div>
@@ -31,7 +31,7 @@ function Gaming(){
                     </div>
                 </>       
             )
-        }
+        
     }       
     )
     return(
