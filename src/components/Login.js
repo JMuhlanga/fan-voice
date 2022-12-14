@@ -32,45 +32,47 @@ function Login({ onLogin, signup }){
 
     return(
         <>
-            <div>
-                <form onSubmit={handleSubmit} className="login-form">
+            <div className="container">
+                <div className="reg-form">
+                    <form onSubmit={handleSubmit} className="login-form">
 
-                    <h2>Sign-In</h2>
+                        <h2>Sign-In</h2>
 
-                    <label htmlFor="username">Username:</label>
-                    <input
-                    type="text"
-                    id="username"
-                    autoComplete="off"
-                    placeholder=" Please enter your username..."
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                    />
+                        <label htmlFor="username">Username:</label>
+                        <input
+                        type="text"
+                        id="username"
+                        autoComplete="off"
+                        placeholder=" Please enter your username..."
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        />
 
-                    <label htmlFor="password">Password:</label>
+                        <label htmlFor="password">Password:</label>
 
-                    <input
-                        type="password"
-                        id="password"
-                        autoComplete="current-password"
-                        placeholder=" Please enter your password..."
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                    
-                    <button type="submit">Login</button>
+                        <input
+                            type="password"
+                            id="password"
+                            autoComplete="current-password"
+                            placeholder=" Please enter your password..."
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                        
+                        <button type="submit">Login</button>
 
-                    <p>
-                    Dont't Have an Account? Sign Up below
-                    </p>
+                        <p>
+                        Dont't Have an Account? Sign Up below
+                        </p>
 
-                    <FormField>
-                    {errors.map((err) => (
-                    <Error key={err}>{err}</Error>
-                    ))}
-                    </FormField>
-                    {signup}
-                </form>
+                        <FormField>
+                        {errors.map((err) => (
+                        <Error key={err}>{err}</Error>
+                        ))}
+                        </FormField>
+                        {signup}
+                    </form>
+                </div>
             </div>
         </>
     )

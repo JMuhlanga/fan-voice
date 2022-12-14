@@ -8,6 +8,8 @@ import Home from './components/Home';
 import Sports from './components/Sports';
 import PopCulture from './components/PopCulture';
 import Gaming from './components/Gaming';
+import AboutUs from './components/About';
+import Article from './components/Article';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -34,9 +36,12 @@ function App() {
         <NavBar user={user} setUser={setUser}/>
         <Routes>
           <Route path="/" element={<Home />} />
+              <Route path=":id" element={<Article />}/>
           <Route path="/sports" element={<Sports />} />
           <Route path="/popculture" element={<PopCulture />} />
           <Route path="/gaming" element={<Gaming />} />
+              <Route path="/:id" element={<Article />}/>
+          <Route path="/about" element={<AboutUs />} />
           {Auth(user) }
         </Routes>
         <Footer />
