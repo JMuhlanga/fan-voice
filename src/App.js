@@ -10,6 +10,8 @@ import PopCulture from './components/PopCulture';
 import Gaming from './components/Gaming';
 import AboutUs from './components/About';
 import Article from './components/Article';
+import Write from './components/Write';
+import ContactUs from './components/Contact';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -42,6 +44,8 @@ function App() {
           <Route path="/gaming" element={<Gaming />} />
               <Route path="/:id" element={<Article />}/>
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/write" element={<Write userProp={user} />} />
+          <Route path="/contact" element={<ContactUs />} />
           {Auth(user) }
         </Routes>
         <Footer />

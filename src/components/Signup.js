@@ -16,7 +16,7 @@ function Signup({ onLogin }){
 
     function handleSubmit(e){
         e.preventDefault();
-        fetch("https://fan-voice-api-production-2957.up.railway.app//signup",{
+        fetch("https://fan-voice-api-production-2957.up.railway.app/signup",{
         method: "POST",
         headers: {
             "Content-Type": "application/json",
