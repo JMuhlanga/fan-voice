@@ -11,7 +11,7 @@ function ContactUs(){
     function handleSubmit(e) {
         e.preventDefault();
               
-        fetch("/contacts", {
+        fetch("https://fan-voice-api-production-2957.up.railway.app/contacts", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
