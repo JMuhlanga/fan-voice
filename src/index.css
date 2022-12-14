@@ -14,3 +14,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.row-home {
+  position: relative; 
+  height: 714px;
+}
+
+.container .album {
+  font-family: Roboto Mono;
+  font: size 18px;
+  background-color: bisque;
+}
+.container .album .reg-form{
+  font-family: Roboto Mono;
+  font: size 18px;
+  background-color: burlywood;
+}
+
+/* .col{
+} */
+
+nav {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.app {
+  background-color: beige;
+}
