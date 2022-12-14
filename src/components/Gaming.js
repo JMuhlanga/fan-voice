@@ -4,7 +4,7 @@ function Gaming(){
     const [artObj ,setArtObj] =useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/articles")
+        fetch("https://fan-voice-api-production-2957.up.railway.app/articles")
           .then((r) => r.json())
           .then((dataObj) => setArtObj(dataObj))
       },[setArtObj])

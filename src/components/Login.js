@@ -15,7 +15,7 @@ function Login({ onLogin, signup }){
 
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("http://localhost:3000/login", {
+        fetch("https://fan-voice-api-production-2957.up.railway.app//login", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",

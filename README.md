@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Fan-Voice-Ke by Jose Kupeka Muhlanga
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Sometimes as a sports fan you can sometimes have ideas where your team should be heading , then
+possibly have a healthy discussion with others about the same, with Fan-voice-ke we offer a
+platform where one can write a article with regards to their Sport and sport team and others can
+have a chance to comment of the same.
 
-In the project directory, you can run:
+## Problem Statement
 
-### `npm start`
+We have many sports and sometimes niche activities, and some of the fans have some things to say
+about their sports and team, opinions that can unite a sports community or a group of fans to have a
+healthy discussion with regards to the same . Their opinions can come from a place of love in the
+sport and can help the sport/team improve.
+While social media can be a good platform to do so, it tends to spiral off into a convoluted mess
+whereby conversations or discussions can end up into territories of abuse or asinine remarks. Thus
+there will be a tendency where others in the sport or team to disregard opinions on social media
+which in turn can create a real disconnect between the sport/team.
+This is where Fan-Voice-Ke comes in, where we can offer a platform for fan opinions in the form
+of articles and give the ability to other fans to rank the other authors while also being involved with
+the conversation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Minimal Viable Product
 
-### `npm test`
+1. Ability for a user to be registered
+2. Ability for a user to post an article
+3. Ability for another user to post a comment to an article
+4. Ability for the article to be posted to the web application
+5. Ability to rate an article and review the articles author.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* HTML.
+* CSS.
+* JavaScript.
+* React.
+* Ruby.
+* SQL
+* Rails
