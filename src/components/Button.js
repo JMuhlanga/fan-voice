@@ -17,11 +17,13 @@ function Button({user, setUser}){
             {user ? (
             <button onClick={handleLogoutClick} className="button3">Logout</button>
             ) : (
-                <>
-                <div id="sign-login"> 
-                    <NavLink to="/signup">Signup  / </NavLink>   
-                    <NavLink to="/login"> Login</NavLink>
-                </div>
+                <>                
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/signup">Signup  / </NavLink> 
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="/login"> Login</NavLink>
+                    </li>                 
                 </>
             )}
         </div>

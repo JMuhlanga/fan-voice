@@ -33,33 +33,36 @@ function Login({ onLogin, signup }){
     return(
         <>
             <div className="container">
+                <div className="album py-5 bg-light"></div>
                 <div className="reg-form">
                     <form onSubmit={handleSubmit} className="login-form">
 
                         <h2>Sign-In</h2>
 
-                        <label htmlFor="username">Username:</label>
+                        <label className="form-label" htmlFor="username">Username:</label>
                         <input
                         type="text"
                         id="username"
+                        className="form-control"
                         autoComplete="off"
                         placeholder=" Please enter your username..."
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
                         />
 
-                        <label htmlFor="password">Password:</label>
+                        <label className="form-label" htmlFor="password">Password:</label>
 
                         <input
                             type="password"
                             id="password"
                             autoComplete="current-password"
+                            className="form-control"
                             placeholder=" Please enter your password..."
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
                         
-                        <button type="submit">Login</button>
+                        <button type="submit" className="btn btn-primary">Login</button>
 
                         <p>
                         Dont't Have an Account? Sign Up below

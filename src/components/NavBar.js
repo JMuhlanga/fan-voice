@@ -53,8 +53,10 @@ function NavBar({user, setUser}){
                             </li>                   
                                                 
                             <li className="nav-item">
-                                {<Button user={user} setUser={setUser}/>}
+                                <NavLink className="nav-link" to="/login">Log-in</NavLink>
                             </li>
+                            {<Button user={user} setUser={setUser}/>}
+                            
                         </ul>
                     </div>         
                                     

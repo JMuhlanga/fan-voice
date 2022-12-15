@@ -46,6 +46,8 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/write" element={<Write userProp={user} />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/login" element= {<Login/>}/>
+          <Route path="/signup" element={<Signup />} />
           {Auth(user) }
         </Routes>
         <Footer />
